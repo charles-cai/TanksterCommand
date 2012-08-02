@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<div id="messages" data-username="@User.Identity.Name"></div>
+
+<div id="input">
+    <input id="text" />
+    <button id="send" />
+</div>
+
+<script id="chatTemplate" type="text/x-handlebars-template">
+<div class="message message-{{MessageType}} {{Me}}">
+    <div class="message-icon" style="background: {{ImageBackground}};">
+        <div class="sm-character sm-character{{ImageIndex}}"></div>
+    </div>
+    <div class="message-container"><span class="message-title">{{Title}}</span><span class="message-text">{{Text}}</span></div>
+</div>
+</script>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/chat")
+    <script type="text/javascript">
+        $(function () {
+            $("#messages").chat();
+        });
+    </script>
+}

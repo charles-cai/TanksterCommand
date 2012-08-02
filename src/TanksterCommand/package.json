@@ -1,0 +1,11 @@
+{
+  "name": "TanskterCommand",
+  "version": "1.0.0",
+  "description": "Chat implemetation using NodeJS and socket.io",
+  "keywords": ["tankster", "nodejs", "socket-io"],
+  "dependencies": {
+    "socket.io": ">= 0.9.2",
+    "express": "2.5.8"
+  },
+  "engine": "node >= 0.4.7"
+}

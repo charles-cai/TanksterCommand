@@ -1,0 +1,11 @@
+﻿@if (Request.IsAuthenticated) {
+    <p>
+        Hello, @Html.Label("UserName", User.Identity.Name)
+        @Html.ActionLink("Log off", "LogOff", "Account")
+    </p>
+}
+else {
+    <ul>
+        <li>@Html.ActionLink("Log in", "FacebookLogin", "Account", routeValues: null, htmlAttributes: new { @id = "loginLink" })</li>
+    </ul>
+}

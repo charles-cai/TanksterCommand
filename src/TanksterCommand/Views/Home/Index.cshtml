@@ -1,0 +1,41 @@
+@{
+    ViewBag.Title = "Leaderboard";
+}
+
+<ul id="leaderboard" data-role="listview" data-inset="true" data-filter="true"></ul>
+
+<script id="leaderboard-items" type="text/x-handlebars-template">
+    {{#each people}}
+    <li class="profile">
+        <img src="{{avatarSrc Avatar }}" alt="{{Name}} Picture"/>
+        <div class="bigrank">{{Rank}}</div>
+        <div class="img"></div>
+        <div class="name">{{Name}}</div>
+        <div class="rank">{{Rank}}</div>
+        <div class="victories">{{Victories}}</div>
+        <div class="kills">{{Kills}}</div>
+        <div class="accuracy">{{Accuracy}}</div>
+        <div class="terraform">{{Terrain}}</div>
+        <div class="viewgame {{inGameClass InGame }}">View Game</div>
+    </li>
+    {{/each}}
+</script>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            Handlebars.registerHelper('avatarSrc', function (item) {
+                return new Handlebars.SafeString('@Url.Content("~/Images/common/character")' + item + '.png');
+            });
+            Handlebars.registerHelper('inGameClass', function (item) {
+                return new Handlebars.SafeString(item ? "" : "offline");
+            });
+
+            $.getJSON('@Url.Action("leaderboard", "api")', function (data) {
+                var template = Handlebars.compile($('#leaderboard-items').html());
+                var html = template({ people: data });
+                $(html).appendTo("#leaderboard");
+            });
+        });
+    </script>
+}

@@ -1,0 +1,1132 @@
+/* =============================================================================
+   Reset / Boilerplate
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+
+audio[controls], canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.231;
+}
+
+body, button, input, select, textarea {
+    font-family: sans-serif;
+    color: #222;
+}
+
+a {
+    color: #00e;
+}
+
+    a:visited {
+        color: #551a8b;
+    }
+
+    a:focus {
+        outline: thin dotted;
+    }
+
+    a:hover, a:active {
+        outline: 0;
+    }
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+dfn {
+    font-style: italic;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+ins {
+    background: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+pre, code, kbd, samp {
+    font-family: monospace, monospace;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+q {
+    quotes: none;
+}
+
+    q:before, q:after {
+        content: "";
+        content: none;
+    }
+
+small {
+    font-size: 85%;
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+ul, ol {
+    margin: 1em 0;
+    padding: 0 0 0 40px;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+nav ul, nav ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 0;
+}
+
+form {
+    margin: 0;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    border: 0;
+    *margin-left: -7px;
+    padding: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+
+button, input {
+    line-height: normal;
+    *overflow: visible;
+}
+
+    button, input[type="button"], input[type="reset"], input[type="submit"] {
+        cursor: pointer;
+        -webkit-appearance: button;
+    }
+
+    input[type="checkbox"], input[type="radio"] {
+        box-sizing: border-box;
+    }
+
+    input[type="search"] {
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+
+    button::-moz-focus-inner, input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+    input:valid, textarea:valid {
+    }
+
+    input:invalid, textarea:invalid {
+        background-color: #f0dddd;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+::-moz-selection {
+    background: #8c3414;
+    color: #efc272;
+    text-shadow: none;
+}
+
+::selection {
+    background: #8c3414;
+    color: #efc272;
+    text-shadow: none;
+}
+
+
+html {
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    border-top: solid 10px #000;
+    color: #333;
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+
+a:link, a:visited,
+a:active, a:hover {
+    color: #333;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: #c7d1d6;
+}
+
+header, footer, hgroup nav, section {
+    display: block;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.highlight {
+    background-color: #a6dbed;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.clear-fix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    color: #000;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+
+/* main layout 
+----------------------------------------------------------*/
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+#body {
+    background-color: #efeeef;
+    clear: both;
+    padding-bottom: 35px;
+}
+
+.main-content {
+    background: url('/images/accent.png') no-repeat;
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+.featured + .main-content {
+    background: url('/images/heroaccent.png') no-repeat;
+}
+
+footer {
+    clear: both;
+    background-color: #e2e2e2;
+    font-size: .8em;
+    height: 100px;
+}
+
+
+/* site title
+----------------------------------------------------------*/
+.site-title {
+    color: #c8c8c8;
+    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+    font-size: 2.3em;
+    margin: 20px 0;
+}
+
+    .site-title a, .site-title a:hover, .site-title a:active {
+        background: none;
+        color: #c8c8c8;
+        outline: none;
+        text-decoration: none;
+    }
+
+
+/* login  
+----------------------------------------------------------*/
+#login {
+    display: block;
+    font-size: .85em;
+    margin-top: 20px;
+    text-align: right;
+}
+
+    #login a {
+        background-color: #d3dce0;
+        margin-left: 10px;
+        margin-right: 3px;
+        padding: 2px 3px;
+        text-decoration: none;
+    }
+
+        #login a.username {
+            background: none;
+            margin-left: 0px;
+            text-decoration: underline;
+        }
+
+    #login p {
+        display: inline;
+    }
+
+    #login li {
+        display: inline;
+        list-style: none;
+    }
+
+
+/* menu  
+----------------------------------------------------------*/
+ul#menu {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0;
+    text-align: right;
+}
+
+    ul#menu li {
+        display: inline;
+        list-style: none;
+        padding-left: 15px;
+    }
+
+        ul#menu li a {
+            background: none;
+            color: #999;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+            ul#menu li a:hover {
+                color: #333;
+                text-decoration: none;
+            }
+
+/* =============================================================================
+   Override style.css
+   ========================================================================== */
+html {
+    background-color: transparent;
+}
+
+.main-content {
+    padding: 0px;
+    background-image: none;
+}
+
+body {
+    border-top: 0px;
+}
+
+#body {
+    background-color: transparent;
+    padding-bottom: 0px;
+}
+
+.site-title a {
+    display: none;
+}
+
+.site-title {
+    width: 479px;
+    height: 115px;
+    background-image: url('/images/logo.png');
+    background-position: -10px 15px;
+}
+
+header .content-wrapper {
+    position: relative;
+    z-index: 100;
+    background-image: url('/images/glyphs.png');
+    background-position: -100px 25px;
+    height: 220px;
+    width: 977px;
+    max-width: 977px;
+}
+
+header #login {
+    position: relative;
+    right: 0px;
+}
+
+#login a {
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+header nav {
+    vertical-align: bottom;
+    position: relative;
+    top: 96px;
+    right: 20px;
+}
+
+ul#menu li a {
+    font-family: Impact;
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+footer {
+    background-color: transparent;
+}
+
+
+/* =============================================================================
+   Shared
+   ========================================================================== */
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/vignette.png'), url('/images/bg.png');
+    background-repeat: no-repeat, repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% 100%, auto;
+    color: #202013;
+}
+
+#container {
+    width: 960px;
+    margin: 0px auto 20px auto;
+    position: relative;
+}
+
+#logo {
+    position: relative;
+    top: 30px;
+}
+
+#signedin {
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: -8px;
+    left: 800px;
+    background-image: url('/images/glyphs.png');
+    background-position: -1160px -44px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+    #signedin span:nth-child(1) {
+        position: absolute;
+        top: 70px;
+        left: -170px;
+        width: 200px;
+        text-align: right;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    #signedin span:nth-child(2) {
+        position: absolute;
+        top: 85px;
+        text-align: right;
+        left: -170px;
+        width: 200px;
+        color: #8c3414;
+    }
+
+    #signedin .signedin-pic {
+        position: absolute;
+        top: 48px;
+        left: 50px;
+    }
+
+.med-character {
+    background-image: url('/images/characters_med.png');
+    width: 92px;
+    height: 96px;
+}
+
+.med-character1 {
+    background-position: 0px 0px;
+}
+
+.med-character2 {
+    background-position: -91px 0px;
+}
+
+.med-character3 {
+    background-position: -182px 0px;
+}
+
+.med-character4 {
+    background-position: -273px 0px;
+}
+
+.sm-character {
+    background-image: url('/images/characters_sm.png');
+    width: 60px;
+    height: 62px;
+}
+
+.sm-character1 {
+    background-position: 0px 0px;
+}
+
+.sm-character2 {
+    background-position: -60px 0px;
+}
+
+.sm-character3 {
+    background-position: -120px 0px;
+}
+
+.sm-character4 {
+    background-position: -180px 0px;
+}
+
+.sm-character5 {
+    background-position: -240px 0px;
+}
+
+.sm-character6 {
+    background-position: -300px 0px;
+}
+
+.sm-character7 {
+    background-position: -360px 0px;
+}
+
+.sm-character8 {
+    background-position: -420px 0px;
+}
+
+.sm-character9 {
+    background-position: -480px 0px;
+}
+
+.sm-character10 {
+    background-position: -540px 0px;
+}
+
+.sm-character11 {
+    background-position: -600px 0px;
+}
+
+.sm-character12 {
+    background-position: -660px 0px;
+}
+
+.sm-character13 {
+    background-position: -720px 0px;
+}
+
+.sm-character14 {
+    background-position: -780px 0px;
+}
+
+.sm-character15 {
+    background-position: -840px 0px;
+}
+
+.sm-character16 {
+    background-position: -900px 0px;
+}
+
+.sm-character17 {
+    background-position: -960px 0px;
+}
+
+.sm-character18 {
+    background-position: -1020px 0px;
+}
+
+.sm-character19 {
+    background-position: -1180px 0px;
+}
+
+.sm-character20 {
+    background-position: -1240px 0px;
+}
+
+#headertitle {
+    clear: both;
+    width: 977px;
+    height: 63px;
+    background-image: url('/images/glyphs.png');
+    background-position: -100px -100px;
+    box-sizing: border-box;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    padding-right: 30px;
+    padding-top: 10px;
+    font-family: Impact;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: right;
+    color: white;
+    z-index: 2;
+}
+
+/* =============================================================================
+   Leaderboard
+   ========================================================================== */
+
+ul, li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.row {
+    font-family: Impact;
+    font-size: 36px;
+    height: 120px;
+    margin-bottom: 40px;
+    position: relative;
+    width: 960px;
+}
+
+    .row:nth-child(odd) {
+        /* every other background not implemented yet--is it needed?? */
+    }
+
+.main-content ul {
+    clear: both;
+}
+
+    .main-content ul li {
+        clear: both;
+        font-family: Impact;
+        font-size: 36px;
+        height: 120px;
+        margin-bottom: 40px;
+        position: relative;
+        width: 960px;
+    }
+
+li div {
+    float: left;
+    background-image: url('/images/glyphs.png');
+}
+
+
+.bigrank {
+    width: 72px;
+    height: 72px;
+    background-position: -1200px -300px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 5px;
+    color: white;
+    font-size: 48px;
+    position: relative;
+    top: -30px;
+}
+
+.profile img {
+    width: 95px;
+    position: absolute;
+    left: 52px;
+    bottom: 31px;
+    z-index: 2;
+}
+
+.img {
+    width: 105px;
+    height: 107px;
+    background-position: -1200px -100px;
+    position: relative;
+    top: 0px;
+    left: -30px;
+    margin-right: -10px;
+}
+
+    .img div {
+        position: relative;
+        top: -7px;
+        left: 10px;
+    }
+
+.name {
+    width: 370px;
+    font-size: 44px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.rank {
+    width: 75px;
+    background-position: -1380px -400px;
+    text-align: center;
+    padding-top: 34px;
+}
+
+.victories {
+    width: 75px;
+    background-position: -1380px -500px;
+    text-align: center;
+    padding-top: 34px;
+}
+
+.kills {
+    width: 75px;
+    background-position: -1380px -600px;
+    text-align: center;
+    padding-top: 34px;
+}
+
+.accuracy {
+    width: 75px;
+    background-position: -1380px -700px;
+    text-align: center;
+    padding-top: 34px;
+}
+
+.terraform {
+    width: 120px;
+    background-position: -1360px -800px;
+    text-align: center;
+    padding-top: 34px;
+}
+
+.viewgame {
+    position: absolute;
+    top: 50px;
+    left: 160px;
+    width: 145px;
+    height: 56px;
+    background-image: url('/images/glyphs.png');
+    background-position: -1400px -100px;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+    .viewgame:hover {
+        background-position: -1400px -200px;
+    }
+
+    .viewgame.offline {
+        background-position: -1384px -285px;
+        cursor: default;
+    }
+
+/* =============================================================================
+   Communication Center
+   ========================================================================== */
+
+#messages {
+    position: relative;
+    top: -60px;
+    z-index: 1;
+    left: 9px;
+    width: 940px;
+    height: 475px;
+    background-image: url('/images/messagebg.png');
+    background-repeat: repeat-y;
+    padding-top: 10px;
+}
+
+.message {
+    clear: both;
+    width: 900px;
+    margin: 0px 20px 0px 20px;
+    position: relative;
+    padding-top: 20px;
+    display: block;
+    position: relative;
+}
+
+.message-chat {
+    background-image: url('/images/glyphs.png');
+    background-position: -1643px -65px;
+    background-repeat: no-repeat;
+}
+
+.message-icon {
+    background: #6d6b40;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    border-radius: 4px;
+}
+
+    .message-icon .sm-character {
+        position: relative;
+        top: -7px;
+    }
+
+.message-container {
+    width: 820px;
+    min-height: 55px;
+    box-sizing: border-box;
+    padding: 10px 15px 0px 15px;
+    font-size: 20px;
+    margin-left: 75px;
+}
+
+.message-chat .message-container {
+    border-radius: 4px;
+    background: #d4d3b9;
+}
+
+.message-title {
+    font-size: 10px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+    color: #8c3414;
+}
+
+/* get different glyphs for events */
+
+.message-event .sm-character {
+    background-image: url('/images/events_sm.png');
+    width: 60px;
+    height: 62px;
+}
+
+.message-event .message-icon .sm-character {
+    position: relative;
+    top: -5px;
+}
+
+
+/* adjust messages from "me" with new color scheme */
+
+.message-me.message-chat {
+    background-image: url('/images/glyphs.png');
+    background-position: -1643px -465px;
+    background-repeat: no-repeat;
+}
+
+    .message-me.message-chat .message-container {
+        background: #423d29;
+        color: #fcd37a;
+    }
+
+.message-me .message-title {
+    color: #ebeadf;
+}
+
+#input {
+    width: 977px;
+    height: 104px;
+    background-image: url('/images/chatbox.png');
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+    top: -100px;
+    left: -10px;
+}
+
+    #input #text {
+        border: 0 none;
+        height: 39px;
+        left: 22px;
+        position: absolute;
+        top: 21px;
+        width: 804px;
+        background: rgba(255,255,255,0);
+        overflow: hidden;
+        font-size: 20px;
+        padding: 8px 10px 8px 15px;
+        color: #fcd37a;
+    }
+
+    #input #send {
+        position: absolute;
+        width: 103px;
+        height: 37px;
+        top: 19px;
+        left: 858px;
+        border: 0px;
+        background-color: transparent;
+        background-image: url('/images/glyphs.png');
+        background-position: -1400px -1000px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+        #input #send:hover {
+            background-position: -1400px -1100px;
+        }
+
+
+#messages {
+    width: 940px;
+    height: 475px;
+    clear: both;
+    position: relative;
+}
+
+    #messages .viewport {
+        width: 915px;
+        height: 435px;
+        overflow: hidden;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        padding-bottom: 10px;
+    }
+
+    #messages .overview {
+        list-style: none;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        padding-bottom: 20px;
+    }
+
+    #messages .thumb .end,
+    #messages .thumb {
+        background-color: rgba(0,0,0,0);
+    }
+
+    #messages .scrollbar {
+        position: relative;
+        float: right;
+        width: 15px;
+        left: -10px;
+        z-index: 2;
+    }
+
+    #messages .track {
+        background-color: rgba(0,0,0,0);
+        height: 100%;
+        width: 18px;
+        position: relative;
+        padding: 5px 1px;
+    }
+
+    #messages .thumb {
+        height: 18px;
+        width: 18px;
+        cursor: pointer;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        box-sizing: border-box;
+    }
+
+        #messages .thumb .thumb-inner {
+            overflow: hidden;
+            width: 6px;
+            height: 100%;
+            background: #903b1c;
+            position: relative;
+            left: 7px;
+            border-radius: 3px;
+        }
+
+    #messages .disable {
+        display: none;
+    }
+
+
+/* =============================================================================
+   Helpers
+   ========================================================================== */
+
+.ir {
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr;
+}
+
+    .ir br {
+        display: none;
+    }
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+    .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+
+@media only screen and (max-width: 480px) {
+    img {
+        display: none;
+    }
+}
+
+/* =============================================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+    /* Style adjustments for viewports 480px and over go here */
+
+}
+
+@media only screen and (min-width: 768px) {
+    /* Style adjustments for viewports 768px and over go here */
+
+}
