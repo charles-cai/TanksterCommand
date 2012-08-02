@@ -2,7 +2,7 @@
     ViewBag.Title = "Leaderboard";
 }
 
-<ul id="leaderboard" data-role="listview" data-inset="true" data-filter="true"></ul>
+<ul id="leaderboard"></ul>
 
 <script id="leaderboard-items" type="text/x-handlebars-template">
     {{#each people}}
@@ -26,16 +26,16 @@
         $(document).ready(function () {
             Handlebars.registerHelper('avatarSrc', function (item) {
                 return new Handlebars.SafeString('@Url.Content("~/Images/common/character")' + item + '.png');
-            });
-            Handlebars.registerHelper('inGameClass', function (item) {
-                return new Handlebars.SafeString(item ? "" : "offline");
-            });
-
-            $.getJSON('@Url.Action("leaderboard", "api")', function (data) {
-                var template = Handlebars.compile($('#leaderboard-items').html());
-                var html = template({ people: data });
-                $(html).appendTo("#leaderboard");
-            });
         });
+        Handlebars.registerHelper('inGameClass', function (item) {
+            return new Handlebars.SafeString(item ? "" : "offline");
+        });
+
+        $.getJSON('@Url.Action("leaderboard", "api")', function (data) {
+            var template = Handlebars.compile($('#leaderboard-items').html());
+            var html = template({ people: data });
+            $(html).appendTo("#leaderboard");
+        });
+    });
     </script>
 }
