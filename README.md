@@ -31,5 +31,6 @@ The Leaderboard sample demonstrates how you can combine ASP.NET and Node.js in t
 3. Import your publish profile and click publish. 
 4. Be sure to enable code first migrations in order to setup your database after you deploy.
 
-	![Enable Migrations](#)
-5. After the applciation is published you can login and use the chat room.
+	![Enable Migrations](https://raw.github.com/WindowsAzure-Samples/TanksterCommand/master/assets/enablemigrations.png?login=ntotten&token=c25deb33f7682c3f747f84b1b7401e96)
+5. Click publish and wait for the application to deploy.
+6. After the applciation is published it will open in the browser. You can now login and test the chat.
