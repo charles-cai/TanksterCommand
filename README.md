@@ -1,6 +1,6 @@
 ## Tankster Command: Leaderboard & Chat Sample
 
-The Leaderboard sample demonstrates how you can combine ASP.NET and Node.js in the same web application. The application consists of the following components.
+The leaderboard and chat sample demonstrates how you can combine ASP.NET and Node.js in the same web application. The application consists of the following components.
 
 * An [ASP.NET MVC 4](http://www.asp.net/mvc/mvc4) leaderbaord application using Entity Framework Code First.
 * A [Node.js](http://nodejs.org/) server that leverages [Socket.IO](https://socket.io) to handle real-time communication between chat users.
