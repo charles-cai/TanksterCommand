@@ -20,6 +20,7 @@
 *.cache
 *.xap
 *.log
+*.logs
 *.vspcc
 *.vspscc
 *.vscc
